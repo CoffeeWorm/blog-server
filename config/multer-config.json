@@ -1,0 +1,8 @@
+{
+  "destination": "./uploads/",
+  "UPLOAD_TYPE": [
+    "txt",
+    "js",
+    "html"
+  ]
+}
