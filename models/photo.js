@@ -6,7 +6,9 @@ const photo = new Schema({
   title: String,
   path: String,
   intro: String,
-  is_top: Boolean
+  location: String,
+  device: String,
+  isTop: Boolean
 });
 
 module.exports = mongoose.model('Photo', photo);

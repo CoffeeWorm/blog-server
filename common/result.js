@@ -4,7 +4,24 @@ class Result {
     this.message = message;
     this.result = result;
   }
-
+  setCode (code = 200) {
+    if (typeof code !== 'number') {
+      return this;
+    }
+    this.code = code;
+    return this;
+  }
+  setMessage (msg) {
+    if (typeof meg !== 'string') {
+      return this;
+    }
+    this.message = msg;
+    return this;
+  }
+  setResult (res = null) {
+    this.result = res;
+    return this;
+  }
   notFound(message = 'failed') {
     this.code = 404;
     this.message = message;
